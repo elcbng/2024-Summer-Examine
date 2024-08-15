@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-compatoble" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="首页">
+    <title>星铁职业选手的留言板</title>
+    
+    <style>
+        /* CSS初始化 */
+html,body,div,article,section,ul,li,form,p,input,button,textarea,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ol,ul,li { list-style: none; }
+a,a:hover { text-decoration: none; }
+img { border: none; }
+body {
+    font: 100%/1.5 "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+    color: #666;
+}
+  /*Main*/
+.wrap {
+    margin: 0 auto;
+    width: 56.25em;
+}
+ 
+/*mes-board*/
+.mes-board {
+    margin: 1.875em 0;
+    border: 1px solid #aaa;
+    padding: 0 .7em;
+    background-color: rgb(204, 252, 255);
+}
+.mes-board li { padding: .7em 0; }
+.mes-board li + li { border-top: 1px dashed #fff; }
+.mes-board h4 {
+    display: inline;
+    margin-right: 2px;
+    font-weight: 400;
+    color: #66f;
+}
+.mes-board small { color: #999; }
+.mes-board p {
+    padding: 1em 0;
+ 
+}
+/*mes-send*/
+.mes-send {
+    padding: .65em;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.form-group { padding: 1.25em; }
+.form-group label { vertical-align: top; }
+.mes-send input[type="text"],
+.mes-send textarea {
+    padding: 1px;
+    width: 40%;
+    border: 1px solid #b7b7b7;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.mes-send input { height: 2em; }
+#btn {
+    margin-left: 1.25em;
+    padding: 5px;
+    border: none;
+    -webkit-border-radius: 1.25em;
+    -moz-border-radius: 1.25em;
+    border-radius: 1.25em;
+    width: 15%;
+    font-size: 12pt;
+    color: #fff;
+    background-color: #66f;
+    cursor: pointer;
+}
+#btn:hover { background-color: #03c; }
+
+body {
+    margin: 0;
+    padding: 0;
+    /* 设置网页背景图 */
+  
+    background-repeat: no-repeat;
+}
+.wrap{
+    /* 居中 */
+    margin: 0 auto;
+    margin-top: 50px;
+    /* 登录框内部的距离(内部与输入框和按钮的距离) */
+    padding: 20px 50px;
+    /* 登录框背景颜色和透明度 */
+    background-color: #00000090;
+    width: 400px;
+    /* 圆角边 */
+    border-radius: 10px;
+    /* 框内所有内容剧中 */
+    text-align: center;
+}
+/* 标题字体 */
+.wrap .title{
+    color: white;
+}
+.wrap input[type="button"]{
+    border: 0;
+    width: 150px;
+    height: 25px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* 按钮圆角边 */
+    border-radius: 20px;
+    /* 设置按钮渐变 */
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+   
+
+
+    </style>
+    <link rel="stylesheet" href="style/indexStyle.css">
+</head>
+
+
+<body>
+     
+   
+        
+    
+
+
+    <div class="wrap">
+        <div class="title">
+            <h1>欢迎来到星铁职业选手的留言板</h1>
+            <p>在这里你可以尽情讨论米家游戏</p>
+            <small>开发者：Always</small>
+        </div>
+        <div class="buttons">
+            <section class="login">
+                <input type="button" name="login" value="登录" onclick="window.location.href='login.html'"/>
+            </section>
+            <section class="register">
+                <input type="button" name="register" value="注册" onclick="window.location.href='register.html'"/>
+            </section>
+            <section class="mes-send">
+                <form method="post" action="send.php">
+                    <div class="form-group">
+                        <label for="user_name">姓名：</label>
+                        <input type="text" id="user_name" name="user_name" placeholder="用户名称">
+                     </div>
+                     <div class="form-group">
+                        <label for="user_mes">留言：</label>
+                        <textarea id="user_mes" name="user_mes"></textarea>
+                     </div>
+                     <input type="submit" value="提 交">
+                </form>
+            </section>
+        </div>
+    </div>
+    <body>
+        <div class="wrap">
+            <!-- 留言显示区 -->
+            <ul class="mes-board">
+                <li class="mes-content">
+                    <h4>原神高手：</h4>
+                    <small>2024-7-21 17:00</small>
+                    <p>我要成为提瓦特第一人！</p>
+                </li>
+                <li class="mes-content">
+                    <h4>绝区零绝顶高手：</h4>
+                    <small>2024-7-28 11:00</small>
+                    <p>我不玩绝区零的</p>
+                </li>
+            </ul>
+        </div>
+    </body>
+</body>
+</html>
